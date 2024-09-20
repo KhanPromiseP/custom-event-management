@@ -38,11 +38,11 @@ Create, Read, Update, and Delete events.
 * Error: { "message": "Failed to create/update event" }
 
 # Retrieve Event(s)
-*Endpoint*
+1 *Endpoint*
 * GET /api/events/read.php
-*Parameters*
+2 *Parameters*
 * id (optional, to fetch specific event)
-*Response*
+3 *Response*
 * JSON array (for all events) or single event object.
 
 # Delete Event
