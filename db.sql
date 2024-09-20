@@ -1,0 +1,14 @@
+
+CREATE DATABASE event_management;
+
+use event_management;
+
+CREATE TABLE `events` (
+    `id` INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    `title` VARCHAR(255) NOT NULL,
+    `description` TEXT NULL,
+    `date` DATETIME NOT NULL,
+    `location` VARCHAR(255) NULL,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
