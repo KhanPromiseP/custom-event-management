@@ -13,7 +13,7 @@ Raw PHP API built to handle CRUD operations for custom event management.
     - update.php
     - delete.php
   -README.md
-  -db.sql (for creating the `events` table)
+  -db.sql (for creating the 'events' table)
 
 **Features**
 Create, Read, Update, and Delete events.
@@ -25,28 +25,28 @@ Create, Read, Update, and Delete events.
 
 **API Endpoints**
 # Create/Update Event
-``Endpoints for Create & Update``
+*Endpoints for Create & Update*
 * POST /api/events/create.php (for creating) 
 * PUT /api/events/update.php?id={id} (for updating)
-``Common Parameters for Create & Update``
+*Common Parameters for Create & Update*
 - title (required)
 - date (required)
 - description (optional)
 - location (optional)
-``Response:``
+*Response*
 * Success: { "message": "Event created/updated successfully" }
 * Error: { "message": "Failed to create/update event" }
 
 # Retrieve Event(s)
-``Endpoint``
+*Endpoint*
 * GET /api/events/read.php
-``Parameters``
+*Parameters*
 * id (optional, to fetch specific event)
-``Response``
+*Response*
 * JSON array (for all events) or single event object.
 
 # Delete Event
-``Endpoint``
+*Endpoint*
 * DELETE /api/events/delete.php?id={id}
-``Response``
+*Response*
 * Success or failure message.
